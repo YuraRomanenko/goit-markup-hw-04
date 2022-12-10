@@ -12,6 +12,8 @@
     --indent:30px;
     --items:3;
     --border: #ECECEC;
+    --icon:#F5F4FA;
+    --card:#AFB1B8;
 }
 /* Зброс стилей */
 h1, h2, h3, h4, h5, h6, p {
@@ -86,6 +88,30 @@ button {
     text-decoration: none;
 }
 
+
+.mail.link.hed-mail::before {
+    display:block;
+    content:'';
+    Width:16px;
+    Height:12px;
+    
+    background-image: url('../images/envelope\ \(hover\).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.header-tel.link::before {
+    display:block;
+    content:'';
+    width: 10px;
+    height: 16px;
+    
+    background-image: url('../images/smartphone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
 .header {
     background:var(--white-text-color-header);
     border-bottom: 1px solid var(--border);
@@ -121,11 +147,6 @@ button {
 .contacts {
     margin-left: auto;
 }
-
-.nav-cont {
-
-
-}
 .ul {
     display: flex;
     gap: 30px;
@@ -133,6 +154,31 @@ button {
 .li{
     flex-basis: calc((100% - 30px) / 4);
 }
+
+.li::before {
+    display:block;
+    content:'';
+    height: 120px;
+    border-radius: 4px;
+    background:var(--icon);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.li.icon-antenna::before {
+    background-image: url('../images/antenna\ 1.svg');
+}
+.li.icon-clock::before {
+    background-image: url('../images/clock\ 1.svg');
+}
+.li.icon-diagram::before {
+    background-image: url('../images/diagram\ 1.svg');
+}
+.li.icon-astronaut::before {
+    background-image: url('../images/astronaut\ 1.svg');
+}
+
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -413,6 +459,54 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
  }
+
+ .text.social-links::after {
+    display:block;
+    content:'';
+    width: 44px;
+    height: 44px;
+    background-size: 20px;
+    background-image: url('../images/instagram\ 2.svg');
+
+    background-color: #2196F3;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-left:32px;
+    margin-top: 16px;
+ }
+ .text.social.instagram::after {
+    display:block;
+    content:'';
+    width: 44px;
+    height: 44px;
+    background-size: 20px;
+    background-image: url('../images/instagram\ 2\ \(1\).svg');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left:32px;
+    margin-top: 16px;
+ }
+ .text.social.twiter::after {
+
+ }
+.section.bg {
+    text-align:center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height:1.14;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+}
+.section.bg::after {
+    display:block;
+    content:'';
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 .about-container {
     width: 1200px;
     padding-left: 15px;
