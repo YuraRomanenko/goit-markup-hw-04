@@ -98,27 +98,8 @@ button {
   text-decoration: none;
 }
 
-mail.link.hed-mail::before {
-  display: block;
-  content: "";
-  width: 16px;
-  height: 12px;
-
-  background-image: url("../images/envelope\ \(hover\).svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.header-icon {
 }
-header-tel.link::before {
-  display: block;
-  content: "";
-  width: 10px;
-  height: 16px;
-
-  background-image: url("../images/smartphone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .header {
   background: var(--white-text-color-header);
   border-bottom: 1px solid var(--border);
@@ -173,16 +154,16 @@ header-tel.link::before {
   margin-bottom: 30px;
 }
 .li.icon-antenna::before {
-  background-image: url("../images/iconsSVG/antenna.svg");
+  background-image: url("../images/icons.svg/antenna.svg");
 }
 .li.icon-clock::before {
-  background-image: url("../images/iconsSVG/clock.svg");
+  background-image: url("../images/icons.svg/clock.svg");
 }
 .li.icon-diagram::before {
-  background-image: url("../images/iconsSVG/diagram.svg");
+  background-image: url("../images/icons.svg/diagram.svg");
 }
 .li.icon-astronaut::before {
-  background-image: url("../images/iconsSVG/astronaut.svg");
+  background-image: url("../images/icons.svg/astronaut.svg");
 }
 
 .header-nav {
@@ -468,7 +449,22 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 
+  border-radius: 50%;
+  outline: 2px solid red;
+}
 .section.bg {
   text-align: center;
   font-weight: 700;
