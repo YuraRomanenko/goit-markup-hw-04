@@ -97,8 +97,18 @@ button {
 .link {
   text-decoration: none;
 }
-
+.mail.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .header-icon {
+  fill: currentColor;
+}
+.header-tel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .header {
   background: var(--white-text-color-header);
@@ -465,6 +475,17 @@ ul {
   border-radius: 50%;
   outline: 2px solid red;
 }
+.client-item {
+}
+.socials-icon {
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border-radius: 4%;
+  outline: 2px solid #afb1b8;
+}
 .section.bg {
   text-align: center;
   font-weight: 700;
@@ -505,6 +526,7 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
+
 .address {
   font-style: normal;
   margin-top: 20px;
