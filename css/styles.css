@@ -200,6 +200,10 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.mail:hover,
+.mail:focus {
   color: var(--accent-color);
 }
 /* смена цвета */
@@ -401,6 +405,7 @@ ul {
   color: var(--secondary-text-color);
 }
 .secondary-team {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.71;
@@ -472,6 +477,8 @@ ul {
   outline: 2px solid red;
   background-color: ffffff;
   fill: #afb1b8;
+  width: 44px;
+  height: 44px;
 }
 .socials-link {
   justify-content: center;
@@ -479,24 +486,30 @@ ul {
   display: flex;
   gap: 10px;
 }
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
+
+.socials-icon:hover,
+.socials-icon:focus {
   fill: #2196f3;
 }
 .client-item {
   text-align: center;
 }
 .client-link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
   border: 4px;
-  outline: 2px solid red;
 }
 .client-icon {
   fill: #afb1b8;
   width: 170px;
   height: 92px;
+
+  outline: 2px solid red;
 }
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.client-icon:hover,
+.client-icon:focus {
   fill: #2196f3;
 }
 .section.bg {
