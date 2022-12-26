@@ -573,3 +573,31 @@ ul {
   flex-basis: calc((100% - 30px) / 4);
   gap: 30px;
 }
+.section-mg {
+  color: var(--white-text-color-header);
+  font-size: 14px;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+.footer-socials-item {
+}
+.footer-socials-link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.footer-socials-icon {
+  border-radius: 50%;
+  outline: 2px solid red;
+  fill: var(--white-text-color-header);
+  width: 44px;
+  height: 44px;
+}
+.footer-socials-icon:hover,
+.socials-icon:focus {
+  fill: #2196f3;
+}
