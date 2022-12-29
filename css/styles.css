@@ -505,8 +505,6 @@ ul {
   fill: #afb1b8;
   width: 170px;
   height: 92px;
-
-  outline: 2px solid red;
 }
 .client-icon:hover,
 .client-icon:focus {
@@ -581,6 +579,7 @@ ul {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
+  padding-left: 516px;
 }
 .footer-socials-item {
 }
@@ -591,11 +590,14 @@ ul {
   gap: 10px;
 }
 .footer-socials-icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
   border-radius: 50%;
   outline: 2px solid red;
   fill: var(--white-text-color-header);
-  width: 44px;
-  height: 44px;
+  width: ;
+  height: ;
 }
 .footer-socials-icon:hover,
 .socials-icon:focus {
