@@ -492,6 +492,12 @@ ul {
 .socials-icon:focus {
   fill: #2196f3;
 }
+.client-list {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
 .client-item {
   text-align: center;
 }
